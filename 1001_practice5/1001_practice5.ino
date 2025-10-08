@@ -23,7 +23,7 @@ void loop() {
   buttonState = digitalRead(buttonPin);
 
   if(buttonState == HIGH && !ButtonPressed) {
-  ledcolor = ledcolor + 1;
+  ledColorOrder = !ledColorOrder;
   ButtonPressed = true;
   } 
   if(buttonState == LOW && ButtonPressed){
